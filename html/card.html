@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>银行卡</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script>
+    window.PointerEvent = void 0
+    </script>
+    <script type="text/javascript" src="../static/js/plug/flexible.debug.js"></script>
+    <link rel="stylesheet" href="../static/css/form.css">
+</head>
+
+<body class="bg_body">
+    <div id="wap">
+        <header>
+            <h2>银行卡</h2>
+            <a class="title_a a_left back"></a>
+        </header>
+        <section class="card">
+            <div class="form_line">
+                <dl>
+                    <dt>持卡人</dt>
+                    <dd>
+                        <input class="js_pass" type="text" name="" placeholder="">
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>卡号</dt>
+                    <dd>
+                        <input class="js_pass" type="text" name="" placeholder="">
+                    </dd>
+                </dl>
+                <dl class="dt_long select">
+                    <dt>所属银行</dt>
+                    <dd>
+                        <input class="js_bank" data-bank="" type="text" name="" placeholder="请选择" readonly="readonly">
+                    </dd>
+                </dl>
+                <div id="select_pc">
+                    <dl class="dt_long select">
+                        <dt>开户行所在省</dt>
+                        <dd>
+                            <input class="js_province" data-bank="110000" type="text" name="" placeholder="请选择" readonly="readonly" value="北京市">
+                        </dd>
+                    </dl>
+                    <dl class="dt_long select">
+                        <dt>开户行所在市</dt>
+                        <dd>
+                            <input class="js_city" data-bank="110100" type="text" name="" placeholder="请选择" readonly="readonly" value="北京市">
+                        </dd>
+                    </dl>
+                    <!-- <dl class="dt_long select">
+                        <dt>开户行所在区</dt>
+                        <dd>
+                            <input class="js_district" data-bank="" type="text" name="" placeholder="请选择" readonly="readonly" value="">
+                        </dd>
+                    </dl> -->
+                </div>
+                <dl class="dt_long select">
+                    <dt>开户行网点</dt>
+                    <dd>
+                        <input class="js_net" data-bank="" type="text" name="" placeholder="请选择" readonly="readonly">
+                    </dd>
+                </dl>
+            </div>
+            <p class="form_note">请绑定持卡人本人的银行卡</p>
+            <div class="fixed_button normal js_submit"><span class="button orange_bg">保存并使用</span></div>
+        </section>
+    </div>
+    <div class="ios_select_container"></div>
+    <div class="ios_select_container_pro"></div>
+    <div class="ios_select_container_city"></div>
+    <div class="ios_select_container_net"></div>
+    <script src="../static/js/require.2.1.11.min.js " type="text/javascript " data-main="../static/js/home/card.js" defer async="true "></script>
+</body>
+
+</html>
