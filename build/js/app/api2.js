@@ -1,11 +1,1 @@
-define(['jquery'],function($){
-	return{
-		getUser:function(){
-			var def=$.Deferred();
-			require(['./app/user'],function(user){
-				def.resolve(user);
-			});
-			return def;
-		}
-	}
-});
+define(["jquery"],function(e){return{getUser:function(){var r=e.Deferred();return require(["./app/user"],function(e){r.resolve(e)}),r}}});

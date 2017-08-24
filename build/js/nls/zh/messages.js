@@ -1,3 +1,1 @@
-define({
-	'edit':'编辑'
-});
+define({edit:"编辑"});

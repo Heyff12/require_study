@@ -4,7 +4,7 @@
 //     console.log(str);
 // });
 //异步获取json
-require(['jquery', 'api', 'i18n!messages', 'css!/static/css/home.css'], function($, api, i18n) {
+require(['jquery', 'api', 'i18n!../nls/messages', 'css!/static/css/home.css'], function($, api, i18n) {
     $('#userinfo').after('<span class="button orange_bg">' + i18n.edit + '</span>');
     $('.js_submit').click(function() {
         //require实现异步获取json-------------------------------------

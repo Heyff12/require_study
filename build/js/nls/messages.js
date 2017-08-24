@@ -1,4 +1,1 @@
-define({
-	'en':true,
-	'zh':true
-});
+define({en:!0,zh:!0});

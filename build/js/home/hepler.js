@@ -1,7 +1,1 @@
-define(["jquery"], function($) {　
-    return {
-        trim: function(str) {
-            return $.trim(str);
-        }
-    }
-});
+define(["jquery"],function(n){return{trim:function(r){return n.trim(r)}}});

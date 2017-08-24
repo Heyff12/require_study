@@ -1,3 +1,1 @@
-define({
-	'edit':'Edit'
-});
+define({edit:"Edit"});

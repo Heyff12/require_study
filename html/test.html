@@ -21,12 +21,38 @@
         </header>
         <section class="tojoin">
             <p id="userinfo"></p>
+            <p id="ajaxinfo">555</p>
         </section>
+        <div class="js_ajaxp"><span class="button orange_bg">跨域ajax-jsonp请求</span></div>
+        <div class="js_ajax"><span class="button orange_bg">跨域ajax-level2请求</span></div>
         <div class="fixed_button  js_submit"><span class="button orange_bg">获取用户信息</span></div>
     </div>
     <script src="/build/js/require.2.1.11.min.js"></script>
     <script src="/build/js/require.config.js"></script>
-    <script src="/build/js/home/test.js"></script>
+    <script src="/static/js/test.js"></script>
+    <!-- <script>
+    function test22(data) {
+        alert(data.name);
+    };
+    </script>
+    <script src="http://127.0.0.1:3004/jsonp?callback=test22"></script> -->
+    <script type="text/javascript">
+    //动态创建script标签，并请求
+    function addScriptTag(src) {
+        var script = document.createElement('script');
+        script.setAttribute('type', 'text/javascript');
+        script.src = src;
+        document.body.appendChild(script);
+    };
+    //如：在onload后，跨域请求
+    window.onload = function() {
+        addScriptTag('http://127.0.0.1:3004/jsonp/testjsonp/haha?callback=monkey');
+    };
+    //回调的方法,且必须为全局方法，不然会报错
+    function monkey(data) {
+        console.log(data);
+    };
+    </script>
 </body>
 
 </html>

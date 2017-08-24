@@ -15,7 +15,7 @@ requirejs.config({
         "jquery": "plug/jquery-2.1.4.min",
         //"hepler": './home/hepler',
         "api": "app/api",
-        "messages": "nls/messages",
+        "messages": "./nls/messages",
         "text": 'plug/require/text',
         "css": 'plug/require/css', //引入css文件
         "i18n": 'plug/require/i18n',
